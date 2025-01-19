@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "elm": "^0.19.1-6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "init": "elm init",
+    "elm:install": "elm install",
+    "build:html": "elm make src/Main.elm",
+    "build": "elm make src/main.elm --output=dist/main.js",
+    "build:optimize": "elm make src/Main.elm --output=dist/main.js --optimize",
+    "tailwind": "tailwindcss -o dist/styles.css",
+    "dev": "elm reactor"
+  }
+}
